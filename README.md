@@ -18,7 +18,6 @@ This central README provides a high-level view for recruiters, technical reviewe
 | **Frontend-application**          | CI/CD workflows with GitHub Actions and ArgoCD for automated testing, builds, and deployments for my frontend application.                                                              | [CI/CD Pipelines](https://github.com/Project-A-Kubernetes/Project__A__frontend.git)                    |
 | **Backend-application** | CI/CD workflows with GitHub Actions and ArgoCD for automated testing, builds, and deployments for my backend application.                                                           | [CI/CD pipelines](https://github.com/Project-A-Kubernetes/Project__A__frontend.git)     |
 | **observability-dashboards** | PrometheusRule, Application Monitoring, and Alerting rules for full-stack observability.                                                            | [Observability Dashboards](https://github.com/Project-A-Kubernetes/Project_A_Observability.git)     |
-
 | **Cluster-Stacks** | prometheus Helm Chart installing, ingress-nginx-controller helm chart, metric-server, Cert-manager, other cluster tools.                                                            | [Cluster-Stack](https://github.com/Project-A-Kubernetes/Project_A_STACKS_TOOLS.git)     |
 
 ---
@@ -26,31 +25,7 @@ This central README provides a high-level view for recruiters, technical reviewe
 ## Architecture Overview
 
 This ecosystem follows a **production-grade, cloud-native architecture**:
-
-```
-       ┌─────────────┐
-       │   Users     │
-       └─────┬───────┘
-             │
-             ▼
-       ┌─────────────┐
-       │  NGINX       │  <-- TLS, Canaries, Rate-limiting
-       │  Ingress     │
-       └─────┬───────┘
-             │
-   ┌─────────┴─────────┐
-   │                   │
-   ▼                   ▼
-Frontend Pods       Backend Pods
-   │                   │
-   │                   ▼
-   │             Databases / Services
-   │
-   └─> Metrics (Prometheus / ServiceMonitor)
-             │
-             ▼
-       Grafana Dashboards
-```
+![Kubernetes Architecture](images/image.png)
 
 * TLS termination with **cert-manager**
 * Canary deployments and rolling updates via **Helm + NGINX Ingress**
