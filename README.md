@@ -4,7 +4,7 @@
 
 This organization hosts the **production-grade infrastructure and applications** for Project A. The ecosystem is built following modern **cloud-native and DevOps standards**, ensuring **security, scalability, observability, and automation** across all environments.
 
-The central README provides a high-level view for recruiters, technical reviewers, or new team members and links directly to all the core repositories.
+This central README provides a high-level view for recruiters, technical reviewers, or new team members and links directly to all the core repositories.
 
 ---
 
@@ -13,10 +13,13 @@ The central README provides a high-level view for recruiters, technical reviewer
 | Repository                   | Description                                                                                                                                                 | Link                                                                                         |
 | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | **frontend-helm-chart**      | Production-ready frontend Helm chart with Deployment, Service, Ingress, HPA, sidecar metrics, ServiceMonitor, TLS via cert-manager, and ArgoCD Application. | [Frontend Helm Chart](https://github.com/Project-A-Kubernetes/Project_A_Helm_Chart_Frontend) |
-| **backend-helm-chart**       | Backend microservices Helm chart with autoscaling, monitoring, and GitOps integration.                                                                      | [Backend Helm Chart](https://github.com/Project-A-Kubernetes/Project_A_Helm_Chart_Backend)   |
-| **terraform-infra**          | Terraform modules for Kubernetes clusters, VPC, IAM roles, ECR, networking, and managed AWS resources.                                                      | [Terraform Infrastructure](https://github.com/Project-A-Kubernetes/Project_A_Terraform)      |
-| **ci-cd-pipelines**          | CI/CD workflows with GitHub Actions and ArgoCD for automated testing, builds, and deployments.                                                              | [CI/CD Pipelines](https://github.com/Project-A-Kubernetes/Project_A_CICD)                    |
-| **observability-dashboards** | Prometheus ServiceMonitors, Grafana dashboards, and alerting rules for full-stack observability.                                                            | [Observability Dashboards](https://github.com/Project-A-Kubernetes/Project_A_Monitoring)     |
+| **backend-helm-chart**       | Backend microservices Helm chart with autoscaling, monitoring, and GitOps integration.                                                                      | [Backend Helm Chart](https://github.com/Project-A-Kubernetes/-Project_A_helm_chart_backend.git)   |
+| **terraform-infrastruture**          | Terraform modules for Kubernetes clusters, VPC, IAM roles, ECR, networking, database, VPN and managed AWS resources.                                                      | [Terraform Infrastructure](https://github.com/Project-A-Kubernetes/Project_A_Terraform)      |
+| **Frontend-application**          | CI/CD workflows with GitHub Actions and ArgoCD for automated testing, builds, and deployments for my frontend application.                                                              | [CI/CD Pipelines](https://github.com/Project-A-Kubernetes/Project__A__frontend.git)                    |
+| **Backend-application** | CI/CD workflows with GitHub Actions and ArgoCD for automated testing, builds, and deployments for my backend application.                                                           | [CI/CD pipelines](https://github.com/Project-A-Kubernetes/Project__A__frontend.git)     |
+| **observability-dashboards** | PrometheusRule, Application Monitoring, and Alerting rules for full-stack observability.                                                            | [Observability Dashboards](https://github.com/Project-A-Kubernetes/Project_A_Observability.git)     |
+
+| **Cluster-Stacks** | prometheus Helm Chart installing, ingress-nginx-controller helm chart, metric-server, Cert-manager, other cluster tools.                                                            | [Cluster-Stack](https://github.com/Project-A-Kubernetes/Project_A_STACKS_TOOLS.git)     |
 
 ---
 
